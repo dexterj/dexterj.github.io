@@ -1,0 +1,310 @@
+extends layout
+
+block content
+  body(data-spy="scroll" data-target="#nameAndButtons")
+
+    .site-wrapper
+      .site-wrapper-inner
+        .cover-container
+         .row
+            #nameAndButtons.pull-right.col-md-12.shiftingWell
+              .inner.cover.well
+                a(href="#")
+                  img(src='images/avatar.jpg' width="150px" style="margin-top: 35px;" class="avatar")
+                  h1.cover-heading.avatar Dexter Jacobs!
+                  p.lead#subTitle.avatar Graphic Designer, Web Developer, Code Chemist.
+                .links
+                  ul.inline-list
+                    li
+                      a(href="http://www.github.com/dexterj" alt="github" title="github")
+                        img.invert(src="images/github.png")
+                      |&nbsp;&nbsp;&nbsp;&nbsp;
+                    li
+                      a(href="http://www.twitter.com/dexterj" alt="twitter" title="twitter")
+                        img.invert(src="images/twitter.png")
+                      |&nbsp;&nbsp;&nbsp;&nbsp;
+                    li
+                      a(href="http://www.linkedin.com/in/dexterjacobs" alt="linkedIn" title="linkedIn")
+                        img.invert(src="images/linkedin.png")
+                      |&nbsp;&nbsp;&nbsp;&nbsp;
+                    li
+                      a(href="http://www.facebook.com/dexterjacobs" alt="facebook" title="facebook")
+                        img.invert(src="images/facebook.png")
+                      |&nbsp;&nbsp;&nbsp;&nbsp;
+                    li
+                      a(href="http://www.pinterest.com/dexterj" alt="pinterest" title="pinterest")
+                        img.invert(src="images/pinterest.png")
+                      |&nbsp;&nbsp;&nbsp;&nbsp;
+                    li
+                      a(href="#" alt="contact" title="contact" class="contactButton")
+                        img.invert(src="images/contact.png")
+                      |&nbsp;&nbsp;&nbsp;&nbsp;
+                    //li
+                      a(href="#" data-toggle="modal" data-target="#dice" alt="dice" title="dice")
+                        img.invert(src="images/dice.png" width="16")
+                      |&nbsp;&nbsp;&nbsp;&nbsp;
+                    li
+                      .dropdown
+                        button(id="dropdownMenu1" data-toggle="dropdown" role="button" href="#" alt="nav board" title="nav board")
+                          span(class="caret")
+                          |&ensp;MENU
+                        ul(class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu1")
+                          li(role="presentation")
+                            a(role="menuitem" tabindex="-1" href="#" class="menuButton knowledgeButton") Knowledge
+                          li(role="presentation")
+                            a(role="menuitem" tabindex="-1" href="#" class="menuButton experienceButton") Experience
+                          li(role="presentation")
+                            a(role="menuitem" tabindex="-1" href="#" class="menuButton portfolioButton") Portfolio
+                          li(role="presentation")
+                            a(role="menuitem" tabindex="-1" href="#" class="menuButton praiseButton") Priaise
+
+            #who-is-dexter.col-md-8
+              #knowledgeBox.col-md-12.info
+                .inner.cover.well.this-is-personal.in-a-well
+                  h1.cover-heading#k-h1.active Knowledge
+                  ul.inline-list
+                    li.well-menu
+                      a(href="#" class="menuButton experienceButton") Experience
+                    li.well-menu
+                      a(href="#" class="menuButton portfolioButton") Portfolio
+                    li.well-menu
+                      a(href="#" class="menuButton praiseButton") Praise
+                  .lists
+                    ul.listing
+                      h3 Web Development
+                      li Python
+                      li Ruby on Rails
+                      li Nodejs
+                      li Express
+                      li Javascript / jQuery
+                      li mySQL
+                      li Bootstrap
+                    ul.listing
+                      h3 Design
+                      li Web / Front-End Development
+                      li Adobe Creative Cloud
+                      li Branding
+                        ul.listing
+                          li Logo
+                          li Pamphlette / Rack-card
+                          li Brochure
+                          li Ads
+                  .lists
+                    ul.listing
+                      h3 University of Iowa
+                      li BFA with Honors - Graphic Design
+                      li Focus of Study
+                        ul.listing
+                          li Graphic Design
+                          li Photography
+                          li Japanese Art History
+                          li Minimalism & Contemporary Art
+                    ul.listing
+                      h3 Cramer Dev
+                      li Web Design
+                    ul.listing
+                      h3 Dev/Iowa Bootcamp
+                      li Web Development
+                  //.progress
+                    .progress-bar.pb1#succ-method.width0
+                      span.sr-only Front End-Developement
+                    .progress-bar.pb2#warn-method.width0
+                      span.sr-only Adobe Creative Cloud
+                    .progress-bar.pb3#dang-method.width0
+                  //span.green Front End Dev&nbsp;
+                  //span.yellow Adobe Creative Cloud
+                  //span.red ???
+
+              #experienceBox.col-md-12.info
+                .inner.cover.well.this-is-personal.in-a-well
+                  h1.cover-heading#e-h1.active Experience
+                  ul.inline-list
+                    li.well-menu
+                      a(href="#" class="menuButton knowledgeButton") Knowledge
+                    li.well-menu
+                      a(href="#" class="menuButton portfolioButton") Portfolio
+                    li.well-menu
+                      a(href="#" class="menuButton praiseButton") Praise
+                  .scrollx
+                    canvas(id="canvas" width="2200" height="456")
+                ul.inline-list
+                  li#everything.btn.btn-default.exp-btn
+                    a(href="#") Everything
+                    &nbsp;
+                  li#creative.btn.btn-default.exp-btn
+                    a(href="#") Creative
+                    &nbsp;
+                  li#biz.btn.btn-default.exp-btn
+                    a(href="#") Business
+                    &nbsp;
+                  li#edu.btn.btn-default.exp-btn
+                    a(href="#") Education
+                    &nbsp;
+                  li#cafe.btn.btn-default.exp-btn
+                    a(href="#") Capanna
+                    &nbsp;
+                  li#oddjob.btn.btn-default.exp-btn
+                    a(href="#") Odd Jobs
+                p.instruction scroll left &amp; right
+
+
+
+
+              #portfolioBox.col-md-12.info
+                .inner.cover.well.this-is-personal.in-a-well
+                  h1.cover-heading#po-h1.active Portfolio
+                  ul.inline-list
+                    li.well-menu
+                      a(href="#" class="menuButton knowledgeButton") Knowledge
+                    li.well-menu
+                      a(href="#" class="menuButton experienceButton") Experience
+                    li.well-menu
+                      a(href="#" class="menuButton praiseButton") Praise
+                  button(class="btn btn-primary capanna-btn" data-toggle="modal" data-target=".capanna") Capanna Coffee Co.
+                  .modal.fade.capanna(tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true")
+                    .modal-dialog.modal-lg
+                      .modal-content
+                        .row
+                          .col-md-12
+                            img(src="/images/port-images/capanna.png" width="100%")
+                        .modal-footer
+                            a(href="http://www.capannacoffee.com") Capanna Website
+                            | &nbsp; Built with the Bootstrap framework in 2011. <br /> I wrote the HTML, CSS, with limited Javascript through Bootstrap.
+                  button(class="btn btn-primary wedge-btn" data-toggle="modal" data-target=".wedge") The Wedge Pizza
+                  .modal.fade.wedge(tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true")
+                    .modal-dialog.modal-lg
+                      .modal-content
+                        .row
+                          .col-md-12
+                            img(src="/images/port-images/wedge.png" width="100%")
+                        .modal-footer
+                            a(href="http://www.thewedgepizza.com") The Wedge Pizza Website
+                            | &nbsp; Built with the Bootstrap framework in 2011. Features a responsive design. <br /> I wrote the HTML, CSS with limited Javascript through Bootstrap.
+                  button(class="btn btn-primary chat-btn" data-toggle="modal" data-target=".chat") Web Chat
+                  .modal.fade.chat(tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true")
+                    .modal-dialog.modal-lg
+                      .modal-content
+                        .row
+                          .col-md-12
+                            img(src="/images/port-images/chat.png" width="100%")
+                        .modal-footer
+                            a(href="https://github.com/dexterj/websocket_chat") Chat Room built with the folks at Iowa/Dev Bootcamp
+                            | &nbsp; I built the style sheets and animations using jQuery &amp; helped with the backend. <br /> Using Nodejs, Express, and Socket.io
+                  button(class="btn btn-primary dice-btn" data-toggle="modal" data-target=".dice") Dice App
+                  .modal.fade.dice(tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true")
+                    .modal-dialog.modal-sm
+                      .modal-content
+                        .row
+                          .col-md-12
+                            img(src="/images/port-images/dice.png" width="100%")
+                        .modal-footer
+                          a(href="https://github.com/dexterj/Dice") A Dice app for iOS.
+                          | &nbsp; I built this dice app based on the classic Japanese game Chinchirorin. <br /> Using HTML, CSS, Javascript, and Phonegap.
+                  button(class="btn btn-primary javajacket-btn" data-toggle="modal" data-target=".javajacket") Coffee Sleve
+                  .modal.fade.javajacket(tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true")
+                    .modal-dialog.modal-md
+                      .modal-content
+                        .row
+                          .col-md-12
+                            img(src="/images/port-images/javajacket.jpg" width="100%")
+                        .modal-footer
+                          | &nbsp; A coffee sleve I created for the 5th anniversary of Capanna Coffee Co. in Iowa City. <br /> Using Adobe CC
+                  button(class="btn btn-primary easter-btn" data-toggle="modal" data-target=".easter") Easter Handout
+                  .modal.fade.easter(tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true")
+                    .modal-dialog.modal-md
+                      .modal-content
+                        .row
+                          .col-md-12
+                            img(src="/images/port-images/easter.jpg" width="100%")
+                        .modal-footer
+                          | &nbsp; A handout I created for Grace Community Church in North Liberty. <br /> Using Adobe CC.
+                  button(class="btn btn-primary christmas-btn" data-toggle="modal" data-target=".christmas") Christmas Ad
+                  .modal.fade.christmas(tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true")
+                    .modal-dialog.modal-md
+                      .modal-content
+                        .row
+                          .col-md-12
+                            img(src="/images/port-images/christmas.jpg" width="100%")
+                        .modal-footer
+                          | &nbsp; A Christmas point of sale flyer I created for Capanna Coffee Co. <br /> Using Adobe CC.
+                  button(class="btn btn-primary armory-btn" data-toggle="modal" data-target=".armory") A Coworking Logo
+                  .modal.fade.armory(tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true")
+                    .modal-dialog.modal-md
+                      .modal-content
+                        .row
+                          .col-md-12
+                            img(src="/images/port-images/armory.jpg" width="100%")
+                        .modal-footer
+                          a(href="https://www.thearmoryworkspace.com") The Armory Workspace
+                          | &nbsp; A logo I created for a coworking space in Colorado. <br /> Using Adobe CC.
+
+              #praiseBox.col-md-12.info
+                .inner.cover.well.this-is-personal.in-a-well
+                  h1.cover-heading#pr-h1.active Praise
+                  ul.inline-list
+                    li.well-menu
+                      a(href="#" class="menuButton knowledgeButton") Knowledge
+                    li.well-menu
+                      a(href="#" class="menuButton experienceButton") Experience
+                    li.well-menu
+                      a(href="#" class="menuButton portfolioButton") Portfolio
+                  ul.quotes
+                    li.glue.unglue0
+                      button(type="button" class="btn btn-default ")
+                        a(href="http://www.thearmoryworkspace.com")
+                          footer Jason Rohlf<br />
+                            cite(title="Armory Workspace") The Armory Workspace
+                    li.glue.unglue1
+                      button(type="button" class="btn btn-default ")
+                        a(href="http://www.cramerdev.com")
+                          footer Josh Cramer<br />
+                            cite(title="CEO Cramer Dev") Cramer Dev
+                    li.glue.unglue2
+                      button(type="button" class="btn btn-default ")
+                        a(href="http://www.capannacoffee.com")
+                          footer Mike McCain<br />
+                            cite(title="CEO Capanna Coffee Co.") Capanna Coffee Co.
+                    li.glue.unglue3
+                      button(type="button" class="btn btn-default ")
+                        a(href="http://www.graceb3.org")
+                          footer Dave Kirk<br />
+                            cite(title="Pastor of Family Ministries &amp; Biblical Counseling at Grace Community Church") Grace Community Church
+                  ul.quotes.popovers
+                    li.popover.unglue0#popover0
+                      span.popover-words Dexter provided the design our logo for our coworking space, The Armory. He did a great job in designing the logo as well as working with me. He was very responsive to input and provided us an outstanding logo. I would definitely use him again.
+                    li.popover.unglue1#popover1
+                      span.popover-words He understands the value of excellence in his work and has a passion for great design. Dexter has a broad and fundamental understanding of how to create great experiences on the web that few possess. I expect to see great things from Dexter in the months and years to come.
+                    li.popover.unglue2#popover2
+                      span.popover-words Dexter was highly creative with his designs, and I was impressed with his ability to take a vague description from me of what I was looking for and create a professional and appealing design that was exactly what I wanted.
+                    li.popover.unglue3#popover3
+                      span.popover-words Dexter has done great work for us as a freelance designer. We have had him work on some publications for us and he has done a great job. Dexter's work is above and beyond what you will ask for. He pays attention to detail, has great integrity and is easy to work with.
+
+              #contactBox.col-md-12.info
+                .inner.cover.well.this-is-personal.in-a-well
+                  h1.cover-heading#co-h1.active Hello!
+                  ul.inline-list
+                    li.well-menu
+                      a(href="#" class="menuButton knowledgeButton") Knowledge
+                    li.well-menu
+                      a(href="#" class="menuButton experienceButton") Experience
+                    li.well-menu
+                      a(href="#" class="menuButton portfolioButton") Portfolio
+                    li.well-menu
+                      a(href="#" class="menuButton praiseButton") Praise
+                  p I'd be happy to hear from you for consultations on your web or design projects. I'm currently looking for work with:
+                  ul.listy
+                    li.list building / designing websites
+                    li.list building apps
+                    li.list designing logos
+                    li.list designing branding materials
+                  p
+                  form(method='POST' action="//api.formspree.com/dexter@dexterjacobs.com")
+                    textarea(cols="94" rows="9" name="message" placeholder="What's on your mind?")
+                    p
+                    input(type="email" size="75" name="_replyto" placeholder="email")
+                    input.btn.btn-default.contact-send(type="submit" value="Send")
+
+
+
+
+block scripts
