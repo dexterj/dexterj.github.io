@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+     <title>Print Resume</title>
+
+     <style type="text/css">
+        * { margin: 0; padding: 0; }
+        body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(images/fabric.png); }
+        .clear { clear: both; }
+        #page-wrap { width: 800px; margin: 40px auto 60px; }
+        #pic { float: right; margin: -30px 0 0 0; }
+        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
+        h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
+        h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
+        p { margin: 0 0 16px 0; }
+        a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
+        a:hover { border-bottom-style: solid; color: black; }
+        ul { margin: 0 0 32px 17px; }
+        #objective { width: 800px; float: left; }
+        #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
+        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
+        dd { width: 600px; float: right; }
+        dd.clear { float: none; margin: 0; height: 15px; }
+        .print{ position:fixed; top:20px; right:20px; }
+        .print:hover { color: transparent; border-bottom: none; }
+     </style>
+</head>
+
+<body>
+
+    <div id="page-wrap">
+
+        <!--<img src="../images/avatar2.png" alt="The classy man" id="pic" style="width:230px;"/>-->
+
+        <div id="contact-info" class="vcard">
+
+            <!-- Microformats! -->
+
+            <h1 class="fn">Dexter L. Jacobs</h1>
+            <a href="#" class="print" onclick="window.print()">Print</a>
+
+            <p>
+                <!--Cell: <span class="tel">555-666-7777</span><br />-->
+                Email: dexter |a| dexterjacobs |dot| com || Phone: 3<span class="number-number">19 . </span>325 . <span>93</span>39
+            </p>
+        </div>
+
+        <div id="objective">
+            <p>
+                I am a creative, web developer &amp; designer. I am looking to serve others with the knowlege &amp; abilities I have gleaned from my life &amp; careers in web development, design, management, roasting, banking &amp; flooring.
+            </p>
+        </div>
+
+        <div class="clear"></div>
+
+        <dl>
+            <dd class="clear"></dd>
+
+            <dt>Education</dt>
+            <dd>
+                <h2>University of Iowa - Iowa City - 2008</h2>
+                <p><strong>Major:</strong> Graphic Design BFA / Honors<br />
+
+                <h2>Cramer Dev intern - Iowa City - 2011</h2>
+                <p><strong>Study:</strong> Web Design / Front End Development<br />
+
+                <h2>/dev/iowa - UI Campus, Iowa City - 2014</h2>
+                <p><strong>Study:</strong> Web Development<br />
+            </dd>
+
+            <dd class="clear"></dd>
+
+            <dt>Skills</dt>
+            <dd>
+                <h2>Web</h2>
+                <p>HTML5, CSS3, jQuery, javascript, node.js, Express, websockets</p>
+
+                <h2>Design</h2>
+                <p>Adobe CC Software (Illustrator, Photoshop, InDesign, Dreamweaver)</p>
+            </dd>
+
+            <dd class="clear"></dd>
+
+            <dt>Experience</dt>
+            <dd>
+                <h2>Capanna Coffee Co.<span>Creative Director - Iowa City, IA - 2009 to 2011</span></h2>
+                <ul>
+                    <li>Worked with CEO to develop &amp; deploy branding &amp; web content</li>
+                    <li>Designed, developed &amp; maintained website</li>
+                </ul>
+
+                <h2>Freelance Graphic Design Consultant<span>Designer - 2009 to Present</span></h2>
+                <ul>
+                    <li>View my portfolio at http://www.dexterjacobs.com</li>
+                </ul>
+            </dd>
+
+            <dd class="clear"></dd>
+
+            <dt>Links</dt>
+            <dd>
+                <ul>
+                  <li>http://www.github.com/dexterj</li>
+                  <li>http://www.linkedin.com/in/dexterjacobs</li>
+            </dd>
+
+            <dd class="clear"></dd>
+
+            <dt>References</dt>
+            <dd>Available on request<br />
+                Or find some at: http://www.linkedin.com/in/dexterjacobs</dd>
+
+
+            <dd class="clear"></dd>
+        </dl>
+
+        <div class="clear"></div>
+
+    </div>
+
+</body>
+
+</html>
