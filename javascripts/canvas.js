@@ -66,16 +66,16 @@ var timeline = function(){
 };
 
 // Married
-var married = function(color, textColor){
-	ctx.beginPath();
-	ctx.strokeStyle=color;
-	ctx.moveTo(									 beta,  75);
-	ctx.lineTo(									 beta,  charlie); ctx.stroke(); ctx.fillStyle = textColor; ctx.save();
-	ctx.translate( 								 beta,  charlie); ctx.rotate(45*Math.PI/180);
-	ctx.translate( 								-beta, -charlie); ctx.font = fontSize+"px "+fontName;
-	ctx.fillText("Married",				 		 beta+3,  charlie+8);
-	ctx.restore();
-};
+//var married = function(color, textColor){
+//	ctx.beginPath();
+//	ctx.strokeStyle=color;
+//	ctx.moveTo(									 beta,  75);
+//	ctx.lineTo(									 beta,  charlie); ctx.stroke(); ctx.fillStyle = textColor; ctx.save();
+//	ctx.translate( 								 beta,  charlie); ctx.rotate(45*Math.PI/180);
+//	ctx.translate( 								-beta, -charlie); ctx.font = fontSize+"px "+fontName;
+//	ctx.fillText("Married",				 		 beta+3,  charlie+8);
+//	ctx.restore();
+//};
 
 // Barista
 var barista = function(color, textColor){
@@ -276,7 +276,7 @@ var bootcamp = function(color, textColor){
 var showEverything = function(){
 	canvas.width = canvas.width;
 	timeline();
-	married(			defaultColor, defaultColor);
+	//married(			defaultColor, defaultColor);
 	barista(			defaultColor, defaultColor);
 	roaster(			defaultColor, defaultColor);
 	marketing(		defaultColor, defaultColor);
@@ -294,7 +294,7 @@ var showEverything = function(){
 var showCapanna = function(){
 canvas.width = canvas.width;
 timeline();
-married(			 lighter ,  lighter );
+//married(			 lighter ,  lighter );
 barista(			 darker  ,  darker  );
 roaster(			 darker  ,  darker  );
 marketing(		 darker  ,  darker  );
@@ -311,7 +311,7 @@ bootcamp(		  lighter ,  lighter );
 var showBiz = function(){
 canvas.width = canvas.width;
 timeline();
-married(			 lighter , lighter );
+//married(			 lighter , lighter );
 barista(			 lighter , lighter );
 roaster(			 lighter , lighter );
 marketing(		 darker , darker );
@@ -328,7 +328,7 @@ bootcamp(		  lighter , lighter );
 var showOddJob = function(){
 canvas.width = canvas.width;
 timeline();
-married(			 lighter , lighter );
+//married(			 lighter , lighter );
 barista(			 lighter , lighter );
 roaster(			 darker , darker );
 marketing(		 lighter , lighter );
@@ -345,7 +345,7 @@ bootcamp(		  lighter , lighter );
 var showEdu = function(){
 canvas.width = canvas.width;
 timeline();
-married(			 lighter , lighter );
+//married(			 lighter , lighter );
 barista(			 lighter , lighter );
 roaster(			 lighter , lighter );
 marketing(		 darker , darker );
@@ -362,7 +362,7 @@ bootcamp(		  darker , darker );
 var showCreative = function(){
 canvas.width = canvas.width;
 timeline();
-married(			 darker , darker );
+//married(			 darker , darker );
 barista(			 lighter , lighter );
 roaster(			 darker , darker );
 marketing(		 lighter , lighter );
