@@ -1,3 +1,28 @@
+body {
+  padding: 50px;
+  font: 14px 'Roboto', sans-serif;
+  background-image: url('/images/stardust.png');
+}
+.scrollx{
+  overflow-x:auto;
+  height:100%;
+  width:100%;
+  padding:20px 0 0 0;
+}
+a {
+  color:#888;
+}
+a:hover {
+  color: #999;
+  text-decoration:none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #bbb;
+}
 
 /*.cover {
   padding: 20px;
