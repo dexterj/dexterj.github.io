@@ -73,10 +73,9 @@
     	</div>
 	</div>	
 	<script>
-		var showContact = function(){$("#contactBox").slideDown("slow");}
-		var cancelContact = function(){$("#contactBox").slideUp("slow");}
+		var showContact = function(){$("#contactBox").slideToggle("slow");}
 		$("#contactButton").on("click", showContact);
-		$("#cancelContact").click(function(event){event.preventDefault();cancelContact();});
+		$("#cancelContact").click(function(event){event.preventDefault();showContact();});
 	</script>
 </body>
 </html>
