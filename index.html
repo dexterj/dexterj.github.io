@@ -3,9 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Dexter Jacobs</title>
+	<script src="javascripts/jquery1-10-2.js"></script>
 	<link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
 	<style>
 		body{text-align:center;padding-top:50px;}
+		a {color: #000;}
+		a:hover {color: #000;}
+		h4 {color: #FFFFFF;}
 		.back-box{text-align:left;position:absolute;height:200px;width:350px;}
 		.shadow1{position:relative;top:-8px;}
 		.shadow2{position:relative;left:-16px;}
@@ -14,6 +18,9 @@
 		.white{background-color: #FFFFFF !important; height: 100px !important;width:350px !important;display:table-cell;vertical-align: middle;}
 		.inline-list{padding: 0;}
 		.inline-list li{display:inline-block;}
+		#contactBox {display:none;}
+		.btn-primary {background-color: #E80000;border-color: #E80000;}
+		.btn-primary:hover {background-color: #FFFFFF;border-color: #E80000;color:#E80000;}
 	</style>
 </head>
 <body>
@@ -26,15 +33,15 @@
 		</div>
 		<div class="col-md-4 col-md-offset-4">
 			<div class="list-group">
-				<a href="#" class="list-group-item active">
+				<span class="list-group-item active">
 				  <h4 class="list-group-item-heading">Hello my name is &hellip;</h4>
-				</a>
-				<a href="#" class="list-group-item white">
+				</span>
+				<span class="list-group-item white">
 				  <h1 class="list-group-item-heading">Dexter Jacobs</h1>
-				</a>
-				<a href="#" class="list-group-item active">
+				</span>
+				<span class="list-group-item active">
 				  <h4 class="list-group-item-heading"></h4>
-				</a>
+				</span>
 			</div>
 			<div class="list-group">
 				<ul class="inline-list">
@@ -44,9 +51,32 @@
 	              <li><a href="http://www.facebook.com/dexterjacobs" alt="facebook" title="facebook"><img src="images/facebook.png" class="invert"></a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
 	              <li><a href="http://www.pinterest.com/dexterj" alt="pinterest" title="pinterest"><img src="images/pinterest.png" class="invert"></a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
 	              <li><a href="http://chinchirorin.herokuapp.com" alt="dice"><img class="invert" src="images/dice.png" width="16"></a>&nbsp;&nbsp;&nbsp;&nbsp;</li>  
+	              <li><a href="#" alt="contact"> <span class="glyphicon glyphicon-envelope" id="contactButton"></span> </a></li>
+
 	            </ul>
 	        </div>
 		</div>
+		<div id="contactBox" class="col-md-4 col-md-offset-4">
+			<form method="POST" action="//api.formspree.com/dexter@dexterjacobs.com" role="form">
+ 				<button id="cancelContact" type="button" class="close">&times;</button>
+    			<div class="form-group">
+    				<textarea id="text-area" class="form-control" rows="9" name="message" placeholder="what's on your mind?"></textarea>
+    			</div>
+    			<div class="form-group">
+    				<input id="email-area" class="form-control" type="email" size="75" name="_replyto" placeholder="example@example.com">
+    			</div>
+    			<div class="form-group">  
+      				<input type="submit" value="Send" class="btn btn-primary btn-block contact-send">
+      				<input type="hidden" name="_next" value="http://dexterjacobs.com" />
+    			</div>
+			</form>
+    	</div>
 	</div>	
+	<script>
+		var showContact = function(){$("#contactBox").slideDown("slow");}
+		var cancelContact = function(){$("#contactBox").slideUp("slow");}
+		$("#contactButton").on("click", showContact);
+		$("#cancelContact").click(function(event){event.preventDefault();cancelContact();});
+	</script>
 </body>
 </html>
