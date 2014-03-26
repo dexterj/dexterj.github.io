@@ -11,8 +11,9 @@
 		a:hover {color: #000;}
 		h4 {color: #FFFFFF;}
 		.back-box{text-align:left;position:absolute;height:200px;width:350px;}
-		.shadow1{position:relative;top:-8px;}
+		.shadow1{position:relative;bottom:8px;}
 		.shadow2{position:relative;left:-16px;}
+		.shadows{-webkit-transition: all 1s ease;-moz-transition: all 1s ease;-o-transition: all 1s ease;transition: all 1s ease;}
 		.list-group{width:350px;}
 		.active{background-color: #E80000 !important;border-color: #E80000 !important;height:50px !important;}
 		.white{background-color: #FFFFFF !important; height: 100px !important;width:350px !important;display:table-cell;vertical-align: middle;}
@@ -27,8 +28,8 @@
 	<div class="container">
 		<div class="col-md-4 col-md-offset-4">
 			<div class="back-box absolute">
-			  <img src="images/shadow2.png" height="200px" alt="shadow" class="shadow2">
-			  <img src="images/shadow1.png" width="350" alt="shadow" class="shadow1">
+			  <img src="images/shadow2.png" height="200px" alt="shadow" class="shadow2 shadows">
+			  <img src="images/shadow1.png" width="350" alt="shadow" class="shadow1 shadows">
 			</div>
 		</div>
 		<div class="col-md-4 col-md-offset-4">
@@ -73,9 +74,18 @@
     	</div>
 	</div>	
 	<script>
+		//Contact toggle
 		var showContact = function(){$("#contactBox").slideToggle("slow");}
 		$("#contactButton").on("click", showContact);
 		$("#cancelContact").click(function(event){event.preventDefault();showContact();});
+		//Name Tag hide shadows via .hover
+		var fadeShadows = function(){$(".shadow2").css("left", 0);$(".shadow1").css("bottom", 16);}
+		var showShadows = function(){$(".shadow2").css("left", "-16px");$(".shadow1").css("bottom", "8px");}
+		$(".list-group").hover(fadeShadows, showShadows);
+		//Random background
+		var images = ['1.png', '2.png', '3.png', '4.png', '5.png', '6.png', '7.png', '8.png', '9.png'];
+		$('body').css({'background-image': 'url(images/bg/' + images[Math.floor(Math.random() * images.length)] + ')'});
+
 	</script>
 </body>
 </html>
