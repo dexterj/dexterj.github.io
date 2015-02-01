@@ -1,10 +1,14 @@
 ---
 layout: post
-title: You're up and running!
+title: Blog Test 002
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below :point_down:).
+Blog Test 002
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quo non vero molestias accusantium ducimus aperiam illum corporis tempora, atque itaque sequi pariatur totam. Tenetur at, illo quis facilis suscipit!
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, blanditiis eveniet ullam voluptatibus officia labore cum amet perferendis. Asperiores voluptatum rerum dignissimos aliquam sed ducimus rem suscipit, dolore voluptatibus, nobis!
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, dolore, eveniet. Nemo ab quod consequatur. Eveniet, nulla illo quisquam perferendis reprehenderit aliquam natus repudiandae, voluptatibus unde repellat expedita suscipit provident.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum maxime suscipit rerum consectetur totam deleniti, dolore placeat, fuga laboriosam quae, rem in sunt. Veniam distinctio rerum, ullam debitis quos, voluptates.
