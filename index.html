@@ -1,18 +1,79 @@
----
-layout: home
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dexter Jacobs</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body class="home">
+	<div class="hero one">
+		<img class="logo" src="images/dexter/global/logo.png" alt="">
+			<a href="http://facebook.com/dexterjacobs" target="_blank">		<i class="fa fa-facebook"></i></a>
+			<a href="http://github.com/dexterj" target="_blank">			<i class="fa fa-github"></i></a>
+			<a href="http://instagram.com/dexterjacobs" target="_blank">	<i class="fa fa-instagram"></i></a>
+			<a href="http://linkedin.com/in/dexterjacobs" target="_blank">	<i class="fa fa-linkedin"></i></a>
+			<a href="http://pinterest.com/dexterj" target="_blank">			<i class="fa fa-pinterest"></i></a>
+			<a href="http://twitter.com/dexterj" target="_blank">			<i class="fa fa-twitter"></i></a>
+			<!-- <a href="#about"><i class="fa fa-arrow-circle-o-down"> more info</i></a> -->
+	</div>
+	<!-- <div class="hero two" id="about">
+		<h2>Front End Web Developer.</h2>
+		<span class="small">I work at Trilix Group in Des Moines, Iowa, where I get to build and update many fun sites. I also do some freelance.</span>
+	</div> -->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.0/isotope.pkgd.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
 
-<div class="posts">
-  <!-- {% for post in site.posts %}
-    <article class="post">    
-      
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+	<script>
 
-      <div class="entry">
-        {{ post.content | truncatewords:40}}
-      </div>
-      
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %} -->
-</div>
+	//SMOOTH SCROLLING
+
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+  	if ($(this).hasClass('popup-modal')) {
+  		return false;
+  	} else if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+      // THE FOLLOWING LINE OF CODE WOULDN'T WORK PAST THE FIRST MEDIA QUERY. WITHOUT IT, IT DOES, BUT IT'S NOT SMOOTH ANYMORE.
+      //   return false;
+      }
+    }
+  });
+});
+
+		//++++++++++++++++++++++++++++
+		// make body height at least the height of the window.
+		//++++++++++++++++++++++++++++
+		var winHeight = $( window ).height();
+		var logoTop = ((winHeight / 2) - 115);
+		function placeLogo() {$('.logo').css('top', logoTop)};
+
+		placeLogo();
+
+		$( window ).resize(function() {
+		  placeLogo();
+		});
+
+
+		$('.hero').css("height", winHeight + "px");
+		$('.one').css("padding-top", winHeight / 2 + 125 + "px"); 
+		$('.one').backstretch('images/dexter/global/bg.jpg', {fade: "slow"});
+		$('.two').css("padding-top", winHeight / 2 + 125 + "px"); 
+		$('.two').backstretch('images/dexter/global/bg2.jpg', {fade: "slow"});
+
+
+		
+	</script>
+</body>
+</html>
