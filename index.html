@@ -11,14 +11,30 @@
 </head>
 <body class="home">
 	<div class="hero one">
-		<img class="logo" src="images/dexter/global/logo.png" alt="">
-			<a href="http://facebook.com/dexterjacobs" target="_blank">		<i class="fa fa-facebook"></i></a>
-			<a href="http://github.com/dexterj" target="_blank">			<i class="fa fa-github"></i></a>
-			<a href="http://instagram.com/dexterjacobs" target="_blank">	<i class="fa fa-instagram"></i></a>
-			<a href="http://linkedin.com/in/dexterjacobs" target="_blank">	<i class="fa fa-linkedin"></i></a>
-			<a href="http://pinterest.com/dexterj" target="_blank">			<i class="fa fa-pinterest"></i></a>
-			<a href="http://twitter.com/dexterj" target="_blank">			<i class="fa fa-twitter"></i></a>
-			<!-- <a href="#about"><i class="fa fa-arrow-circle-o-down"> more info</i></a> -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-3">
+					<img class="" src="images/dexter/global/logo.png" alt="">
+						<span class="clear">
+							<a href="http://facebook.com/dexterjacobs" target="_blank">		<i class="fa fa-facebook"></i></a>
+							<!-- <a href="http://github.com/dexterj" target="_blank">		<i class="fa fa-github"></i></a> -->
+							<a href="http://instagram.com/dexterjacobs" target="_blank">	<i class="fa fa-instagram"></i></a>
+							<a href="http://linkedin.com/in/dexterjacobs" target="_blank">	<i class="fa fa-linkedin"></i></a>
+							<!-- <a href="http://pinterest.com/dexterj" target="_blank">	<i class="fa fa-pinterest"></i></a> -->
+							<a href="http://twitter.com/dexterj" target="_blank">			<i class="fa fa-twitter"></i></a>
+							<!-- <a href="#about"><i class="fa fa-arrow-circle-o-down"> more info</i></a> -->
+						</span>
+					
+				</div>
+				<div class="col-md-4" style="background-color: rgba(250,250,250,.75)">
+					<p>&nbsp;</p>
+					<h2><a href="http://www.indiecomic.ninja" style="color: #ed2424;">IndieComic.Ninja</a></h2>
+					<p style="color:#000000;">A monthly newsletter with a list of upcoming indie comics and resources for creators.</p>
+					<p><a href="http://www.indiecomic.ninja" style="color: #fff;background-color:#ed2424;border-color:#ed2424;" class="btn btn-default"><strong>CHECK IT OUT</strong> &raquo;</a></p>
+					<p>&nbsp;</p>
+				</div>
+			</div>
+		</div>
 	</div>
 	<!-- <div class="hero two" id="about">
 		<h2>Front End Web Developer.</h2>
@@ -31,26 +47,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
 
 	<script>
-
-	//SMOOTH SCROLLING
-
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-  	if ($(this).hasClass('popup-modal')) {
-  		return false;
-  	} else if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-      // THE FOLLOWING LINE OF CODE WOULDN'T WORK PAST THE FIRST MEDIA QUERY. WITHOUT IT, IT DOES, BUT IT'S NOT SMOOTH ANYMORE.
-      //   return false;
-      }
-    }
-  });
-});
 
 		//++++++++++++++++++++++++++++
 		// make body height at least the height of the window.
@@ -67,9 +63,9 @@ $(function() {
 
 
 		$('.hero').css("height", winHeight + "px");
-		$('.one').css("padding-top", winHeight / 2 + 125 + "px"); 
+		$('.one').css("padding-top", 100 + "px"); 
 		$('.one').backstretch('images/dexter/global/bg.jpg', {fade: "slow"});
-		$('.two').css("padding-top", winHeight / 2 + 125 + "px"); 
+		$('.two').css("padding-top", 125 + "px"); 
 		$('.two').backstretch('images/dexter/global/bg2.jpg', {fade: "slow"});
 
 
