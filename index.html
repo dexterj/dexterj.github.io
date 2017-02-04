@@ -1,1 +1,322 @@
 
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- Forcing initial-scale shouldn't be necessary -->
+<meta name="viewport" content="width=device-width"> 
+<!-- Use the latest (edge) version of IE rendering engine -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<!-- Disable auto-scale in iOS 10 Mail entirely -->
+<meta name=”x-apple-disable-message-reformatting”>  
+<!-- Disable auto telephone linking in iOS -->
+<meta name="format-detection" content="telephone=no"> 
+<!-- Left blank intentionally -->
+<title></title>
+
+  <!-- Included CSS for non gmail clients -->
+  <style type="text/css">
+      
+      
+      div, p, a, li, td { -webkit-text-size-adjust:none; }
+#outlook a {padding:0;} /* Force Outlook to provide a "view in browser" menu link. */
+html{width: 100%; }
+body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;}
+      h1 {font-size: 2em;}
+h2 {font-size: 1.5em;}
+h3 {font-size: 1.25em;}
+h1, h2, h3 {font-family: Oswald, Arial, sans-serif;margin: 0 0 .25em 0;line-height: 1.5em;}
+h2 + h3 {margin:1em 0}
+p, td, span {font-family: Arial, sans-serif;color:#555555;font-size: 15px;line-height: 20px;}
+p {margin:0 0 1em 0} 
+.center {text-align: center;}
+.footer p {font-size:.7em;}
+.footer a {text-decoration:underline!important;}
+
+@media screen and (max-width: 599px) {
+    .mc {text-align: center;}
+    .center {text-align: left!important;}
+}
+    
+    /* colors 
+        #ed2424 - red 
+        #555555 - dark grey
+    */
+    h1, h2, .btn a 		{color: #ed2424;}
+	h3, p, td, span, body   {color: #555555;}
+    .btn a 		{background-color: #FFFFFF;border-color:#ed2424;}
+    .btn a:hover {background-color:#ed2424!important;color:#FFFFFF!important;}
+    .btn td 	 {background-color: transparent;}
+    .link {color:#ed2424;}
+    .link:hover {color:#555555!important;}
+  	.colored {background-color:#ed2424}
+    .colored h1, 
+    .colored h2, 
+    .colored .btn a, 
+    .colored h3, 
+    .colored p, 
+    .colored td, 
+    .colored span, 
+    .colored body {
+      	color: #ffffff;
+    }
+    .footer {background-color:#555555;}
+    .footer h1, 
+    .footer h2, 
+    .footer .btn a, 
+    .footer h3, 
+    .footer p, 
+    .footer td, 
+    .footer span, 
+    .footer body {
+        color: #ffffff;
+    }
+    .footer a {
+        color: #ffffff;
+    }
+      
+      .btn a {
+    font-size: 16px; 
+    font-family: Oswald, Arial, sans-serif; 
+    text-transform: uppercase;
+    text-decoration: none; 
+    -webkit-border-radius: 4px; 
+    -moz-border-radius: 4px; 
+    border-radius: 4px; 
+    padding: 12px 18px; 
+    border-width: 2px;
+    border-style: solid; 
+    display: inline-block;
+    -webkit-transition: background-color 0.25s ease,color 0.25s ease;
+    -moz-transition:     background-color 0.25s ease,color 0.25s ease;
+    transition:         background-color 0.25s ease,color 0.25s ease;
+}
+
+.btn td {
+    -webkit-border-radius: 4px; 
+    -moz-border-radius: 4px; 
+    border-radius: 4px;
+}
+
+a.link {
+    text-decoration: none!important;
+    font-weight: bold;
+    -webkit-transition: color 0.25s ease;
+    -moz-transition:    color 0.25s ease;
+    transition:         color 0.25s ease;
+}
+      img.full, img.full2 {width:100%;display:block;}
+a img {
+    -webkit-transition: opacity 0.25s ease;
+    -moz-transition:    opacity 0.25s ease;
+    transition:         opacity 0.25s ease;
+    border-style: none!important;
+}
+a img:hover {opacity:.6;}
+
+@media screen and (max-width: 599px) {
+    img.full {margin-bottom:1em!important;width:100%!important;margin: auto;}
+    img.full2 {margin:0 auto 1em auto!important;width:50%!important;}
+}
+      
+
+    
+  </style>
+
+<style type="text/css">
+@font-face {
+    font-family: Oswald;
+    src: url(http://fonts.googleapis.com/css?family=Oswald);
+    mso-font-alt: 'Arial';
+}
+</style>
+
+<style type="text/css">
+.container {margin:0 auto!important;}
+.col-100 {width: 100%;max-width: 600px;}
+.col-30  {width: 100%;max-width: 200px;}
+.col-60  {width: 100%;max-width: 400px;}
+.col-25  {width: 100%;max-width: 150px;}
+.col-50  {width: 100%;max-width: 300px;}
+.col-75  {width: 100%;max-width: 450px;}
+.col-first-td, .col-last-td, .col-mid-td, .col-only-td {padding-left: 10px; padding-right: 10px;} 
+
+@media screen and (max-width: 599px) {
+    .container {width:80% !important;}
+    .container.colored {width:100%!important}
+    .col-100, 
+    .col-30, .col-60,
+    .col-25, .col-75, .col-50 {width: 100% !important;max-width: 100% !important;}
+
+    .col-mid-td p {margin-bottom:1em!important;}
+}
+</style>
+</head>
+<body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+      <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="container">
+        <tr>
+              <td>
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0" align="left" class="col-100">
+                                  <tr>
+                                    <td class="col-only-td">
+                                          &nbsp;
+                                    </td>
+                                  </tr>
+          						<tr>
+            						<td class="col-only-td">
+              							<h1>Dexter Jacobs</h1>
+                                        <p>Designer | Developer | Podcaster</p>
+            						</td>
+          						</tr>
+                                  <tr>
+                                    <td class="col-only-td">
+                                          &nbsp;
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="col-only-td">
+                                          <img src="http://www.fillmurray.com/600/200" width="580" class="full" alt="" />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="col-only-td">
+                                          &nbsp;
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="col-only-td">
+                                        <h2>Work</h2>  
+                                        <p>
+                                            I am a front-end designer/developer of web and email. I graduated fromt he University of Iowa with a BFA in Graphic Design. I have been makeing websites since jr. high, freelancing since 2011 and working for an agency makeing websites and HTML email for the last 3 years. For a list of my work or some examples please fill out the contact <a href="#contactform" class="link">form below</a>. For an example of email, this site is basically an email.
+                                        </p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="col-only-td">
+                                          &nbsp;
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="col-only-td">
+                                        <h2>Projects</h2>  
+                                        <p>
+                                        	<strong>Podcasting:</strong> I am currently co-host of <a href="http://www.indiecomic.ninja" class="link">Indie Comic Ninja</a>, an indie/creator owned comic review and interview podcast. 
+                                        </p>
+                                        <p>
+                                            <strong>Freelance:</strong> I design and develope custom HTML emails and email templates. Please contact me via the <a href="#contactform" class="link">form below</a> with any inquiries.
+                                        </p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="col-only-td">
+                                          &nbsp;
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="col-only-td">
+                                        <h2>Find Me</h2>  
+                                        <p> 
+                                            I mostly facbook about my boy, tweet about email and LinkedIn about my work history.
+                                            <a href="http://www.Facebook.com/dexterjacobs" class="link">Facebook.com/dexterjacobs</a> | 
+                                            <a href="http://www.twitter.com/dexterj" class="link">twitter.com/dexterj</a> | 
+                                            <a href="http://www.linkedin.com/in/dexterjacobs" class="link">linkedin.com/in/dexterjacobs</a>
+                                        </p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="col-only-td">
+                                          &nbsp;
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="col-only-td">
+                                        <h2 id="contactform">Contact Dexter</h2>  
+                                        <form action="https://formspree.io/dexter@dexterjacobs.com" method="POST">
+                                              <div class="form-group">
+                                                <p>
+                                                    <label for="name">Name</label> <br>
+                                                	<input class="form-control" type="text" id="name" name="name">
+                                              </p>
+
+                                                <p>
+                                                    <label for="email">Email</label> <br>
+                                                	<input class="form-control" type="email" id="email" name="_replyto">
+                                              </p>
+
+                                                <p>
+                                                    <label for="comment">Comment</label> <br />
+                                                	<textarea class="form-control" name="comment" id="comment" width="100%"></textarea>
+                                              </p>
+                                                <p>
+                                                    <input class="btn btn-default" type="submit" value="Send">
+                                                  </p>
+                                              </div>
+                                        </form>
+                                    </td>
+                                  </tr>
+                            
+                                  <tr>
+                                    <td class="col-only-td">
+                                          &nbsp;
+                                    </td>
+                                  </tr>
+                           
+                            </table>
+              </td>
+          </tr>
+      </table>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="container footer">
+        <tr>
+            <td>
+                <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="container">
+                    <tr>
+                        <td>
+                                        <table width="100%" border="0" cellpadding="0" cellspacing="0" align="left" class="col-100">
+                                              <tr>
+                                                <td class="col-only-td">
+                                                      &nbsp;
+                                                </td>
+                                              </tr>
+                                        </table>
+                                        <table width="100%" border="0" cellpadding="0" cellspacing="0" align="left" class="col-100">
+                                              <tr>
+                                                <td class="col-only-td">
+                                                   	<p>&copy;2017 Dexter Jacobs | dexterjacobs.com</p>
+                                                </td>
+                                              </tr>
+                                        </table>
+                       
+                                        <table width="100%" border="0" cellpadding="0" cellspacing="0" align="left" class="col-100">
+                                              <tr>
+                                                <td class="col-only-td">
+                                                      &nbsp;
+                                                </td>
+                                              </tr>
+                                        </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+      $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+</body>
+</html>
