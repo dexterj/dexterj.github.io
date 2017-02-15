@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Dexter Jacobs - Front-end Developer</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Press+Start+2P" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<style>
+		body {background-color: #232323;}
+
+		h1,h2,h3,h4,h5,h6 {font-family:'Press Start 2P', sans-serif;color:#ddd;}
+		p, a, li {font-family: 'Open Sans', sans-serif;color:#ddd;}
+
+		.row {
+			margin: 0 auto;
+			width: 85%;
+			max-width: 1140px;
+			display: block;
+		}
+		.col-10 {
+			width: 83.333%;
+			padding: 0 1.25%;
+			margin-left: 8.333%;
+			padding-top: 1em;
+		}
+
+		.contact {
+			display: block;
+			text-align: center;
+		}
+		.contact a {
+			font-family: 'Press Start 2P', sans-serif;
+			text-decoration: none;
+		}
+
+		.contact span {font-size:1.75em;}
+
+		.col-8 {
+			width: 66.666%;
+			padding: 0 1.25%;
+			margin-left: 16.666%;
+			padding-top: 10em;
+		}
+
+		section {margin-bottom: 6em;display: block;}
+
+		img.scale {
+			max-width: 100%;
+		}
+
+
+		@media (max-width: 800px) {
+			.col-10, .col-8 {
+				padding: 0 1.25%;
+				width: 100%;
+				margin:0;
+			}
+		}
+
+		.fly-in-top{
+		  -webkit-animation: flyintopanim 3s ease;
+		}
+		@-webkit-keyframes flyintopanim
+		{
+		  0% {-webkit-transform: translateY(-1000px);}
+		  100% {-webkit-transform: translateY(0px);}
+		}
+
+		.pop-in{
+		  -webkit-animation: popinanim 3s ease;
+		}
+
+		@-webkit-keyframes popinanim{
+		  0% {
+		    opacity:0;
+		    -webkit-transform: scale(0.75);
+		  }
+		  93% {
+		    opacity:0;
+		    -webkit-transform: scale(0.75);
+		  }
+		  100% {
+		    opacity:1;
+		    -webkit-transform: scale(1);
+		  }
+		}
+
+		.pop-in2{
+		  -webkit-animation: popinanim2 3s ease;
+		}
+
+		@-webkit-keyframes popinanim2{
+		  0% {
+		    opacity:0;
+		    -webkit-transform: scale(0.75);
+		  }
+		  95% {
+		    opacity:0;
+		    -webkit-transform: scale(0.75);
+		  }
+		  100% {
+		    opacity:1;
+		    -webkit-transform: scale(1);
+		  }
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-10">
+				<img src="img/dexter-header2.png" alt="" class="scale fly-in-top">
+				<p class="contact pop-in"><a href="#contactform"><span>&#9656;</span> CONTACT ME</a></p>
+			</div>
+			<div class="col-8">
+				<section class="work">
+					<h2>Work</h2>
+					<p>I am a front-end designer/developer of web and email. I graduated fromt he University of Iowa with a BFA in Graphic Design. I have been makeing websites since jr. high, freelancing since 2011 and working for an agency makeing websites and HTML email for the last 3 years. For a list of my work or some examples please fill out the contact form below. For an example of email, this site is basically an email.</p>
+					<h3><strong>Things I know</strong></h3>
+					<ul class="fifty">
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>SASS</li>
+						<li>JQUERY</li>
+						<li>Familiar with:
+							<ul>
+								<li>node.js</li>
+								<li>React</li>
+							</ul>
+						</li>
+					</ul>
+					<h3><strong>Other things</strong></h3>
+					<ul class="fifty">
+						<li>Solves problems well</li>
+						<li>Adapts well to new tasks</li>
+						<li>Strong work ethic</li>
+						<li>Collaborates</li>
+						<li>Always researching</li>
+					</ul>
+				</section>
+				<section class="projects">
+					<h2>Projects</h2>
+					<p>
+						<strong>Freelance:</strong> Please contact me via the <a href="#contactform" class="link">form below</a> with any inquiries.
+					</p>
+					<p>
+						What I can do for you:
+					</p>
+					<ul>
+						<li>Design and develope custom HTML emails and email templates. </li>
+						<li>Set up email service with Mailchimp or my own ESP (starting at $10 a month).</li>
+						<li>Front-end design and development of a site. </li>
+					</ul>
+					<p>
+						<strong>Podcasting:</strong> I am currently co-host of <a href="http://www.indiecomic.ninja" class="link">Indie Comic Ninja</a>, an indie/creator owned comic review and interview podcast.
+					</p>
+					<p>
+						Podcasts that I consistently find myself listening to:
+					</p>
+					<ul>
+						<li><a href="https://itunes.apple.com/us/podcast/well-made/id1110562334?mt=2" class="link">Well Made</a> from Lumi: A show about the intersection between business and&nbsp;design.</li>
+						<li><a href="https://itunes.apple.com/us/podcast/megamaker/id1074661788?mt=2" class="link">Mega Maker</a> from Justin Jackson: For digital makers who want to make a living from the things they make.</li>
+						<li><a href="https://itunes.apple.com/us/podcast/the-business-of-art/id1073117997?mt=2" class="link">The Business of Art</a> from Wannabe Press: Demystifies business for creators.</li>
+						<li><a href="https://itunes.apple.com/us/podcast/one-stop-shop/id1132830754?mt=2" class="link">One Stop Shop</a> from Conversio: Ecommerce owners are used to buidling things on their own, but it doesn't have to be that way.</li>
+					</ul>
+				</section>
+				<section class="findme">
+					<h2>Online</h2>
+					<p>
+						<ul>
+							<li><a href="http://www.Facebook.com/dexterjacobs" class="link">Facebook.com/dexterjacobs</a></li>
+							<li><a href="http://www.twitter.com/dexterj" class="link">twitter.com/dexterj</a></li>
+							<li><a href="http://www.linkedin.com/in/dexterjacobs" class="link">linkedin.com/in/dexterjacobs</a></li>
+						</ul>
+					</p>
+				</section>
+				<section class="contactme" id="contactform">
+					<h2>Contact Dexter</h2>
+					<form action="https://formspree.io/dexter@dexterjacobs.com" method="POST">
+						<div class="form-group">
+							<p>
+								<label for="name">Name</label> <br>
+								<input class="form-control" type="text" id="name" name="name">
+							</p>
+
+							<p>
+								<label for="email">Email</label> <br>
+								<input class="form-control" type="email" id="email" name="_replyto">
+							</p>
+
+							<p>
+								<label for="comment">Comment</label> <br>
+								<textarea class="form-control" name="comment" id="comment" width="100%"></textarea>
+							</p>
+							<p>
+								<input type="hidden" name="_next" value="/thanks.html">
+								<input class="btn btn-default" type="submit" value="Send">
+							</p>
+						</div>
+					</form>
+				</section>
+			</div>
+		</div>
+	</div>
+	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+	<script src="js/vendor/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript">
+	$(function() {
+		$('a[href*="#"]:not([href="#"])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		  var target = $(this.hash);
+		  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		  if (target.length) {
+			$('html, body').animate({
+			  scrollTop: target.offset().top
+			}, 1000);
+			return false;
+		  }
+		}
+		});
+	});
+	</script>
+</body>
+</html>
