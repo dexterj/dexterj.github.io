@@ -82,3 +82,12 @@ img.scale {
 	-webkit-transform: scale(1);
   }
 }
+
+input, textarea {
+    width: 100%;
+    padding: .5em;
+    color: #555;
+    box-sizing: border-box;
+}
+
+
