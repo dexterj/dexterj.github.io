@@ -14,7 +14,7 @@
 		<div class="row">
 			<div class="col-10">
 				<img src="img/dexter-header2.png" alt="" class="scale fly-in-top">
-				<p class="contact pop-in"><a href="#contactform"><span>&#9656;</span> CONTACT ME</a></p>
+				<p class="contact pop-in"><a class="popup-with-form" href="#contact-form"><span>&#9656;</span> CONTACT ME</a></p>
 			</div>
 			<div class="col-8">
 				<section class="work">
@@ -70,17 +70,15 @@
 				</section>
 				<section class="findme">
 					<h2>Online</h2>
-					<p>
-						<ul>
-							<li><a href="http://www.Facebook.com/dexterjacobs" class="link">Facebook.com/dexterjacobs</a></li>
-							<li><a href="http://www.twitter.com/dexterj" class="link">twitter.com/dexterj</a></li>
-							<li><a href="http://www.linkedin.com/in/dexterjacobs" class="link">linkedin.com/in/dexterjacobs</a></li>
-						</ul>
-					</p>
+					<ul>
+						<li><a href="http://www.Facebook.com/dexterjacobs" class="link">Facebook.com/dexterjacobs</a></li>
+						<li><a href="http://www.twitter.com/dexterj" class="link">twitter.com/dexterj</a></li>
+						<li><a href="http://www.linkedin.com/in/dexterjacobs" class="link">linkedin.com/in/dexterjacobs</a></li>
+					</ul>
+
 				</section>
-				<section class="contactme" id="contactform">
-					<h2>Contact Dexter</h2>
-					<form action="https://formspree.io/dexter@dexterjacobs.com" method="POST">
+					<form action="https://formspree.io/dexter@dexterjacobs.com" method="POST"  id="test-form" class="mfp-hide white-popup-block">
+						<h2>Contact Dexter</h2>
 						<div class="form-group">
 							<p>
 								<label for="name">Name</label> <br>
@@ -102,13 +100,31 @@
 							</p>
 						</div>
 					</form>
-				</section>
 			</div>
 		</div>
 	</div>
 	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 	<script src="js/vendor/jquery-1.11.2.min.js"></script>
 	<script type="text/javascript">
+	$(document).ready(function() {
+		$('.popup-with-form').magnificPopup({
+			type: 'inline',
+			preloader: false,
+			focus: '#name',
+
+			// When elemened is focused, some mobile browsers in some cases zoom in
+			// It looks not nice, so we disable it:
+			callbacks: {
+				beforeOpen: function() {
+					if($(window).width() < 700) {
+						this.st.focus = false;
+					} else {
+						this.st.focus = '#name';
+					}
+				}
+			}
+		});
+	});
 	$(function() {
 		$('a[href*="#"]:not([href="#"])').click(function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
